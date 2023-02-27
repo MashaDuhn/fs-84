@@ -1,3 +1,10 @@
+:root {
+    --main-title-color: #ffffff;
+    --secondary-title-color: #303030;
+    --accent-color: #FF6C00;
+    --secondary-font: 'Raleway', sans-serif;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -10,6 +17,44 @@ body {
     text-decoration: none;
 }
 
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.title {
+    font-family: var(--secondary-font);
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ______________Header____________________ */
 .header {
     background-color: gray;
 }
@@ -25,27 +70,252 @@ body {
 .header-link {
     font-weight: 600;
     font-size: 12px;
-    line-height: 1, 33;
+    line-height: 1.33;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
 }
 
 .header-tel {
     font-weight: 600;
     font-size: 12px;
-    line-height: 1, 33;
+    line-height: 1.33;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .header-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1, 33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+
     color: #FFFFFF;
 
+}
+
+/* _____________________ Hero section_______________________ */
+.hero {
+    background-color: gray;
+}
+
+.hero-list {}
+
+.hero-item {}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-subtitle {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    font-family: var(--secondary-font);
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--main-title-color);
+}
+
+.hero-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+/* ____________About______________ */
+.about {}
+
+.about-list {}
+
+.about-item {}
+
+.about-subtitle {
+    color: var(--secondary-title-color);
+}
+
+.about-title {
+    color: var(--secondary-title-color);
+}
+
+.about-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-description span {
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+.about-button {
+    color: #303030;
+}
+
+/* ____________________Services_________________ */
+
+.prices {}
+
+.prices-subtitle {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    color: var(--main-title-color);
+}
+
+.prices-list {}
+
+.prices-item {}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.prices-btn {
+
+    color: #FFFFFF;
+
+}
+
+/* ____________________Feature_________________ */
+
+.benefits {}
+
+.benefits-list {}
+
+.benefist-item {}
+
+.benefist-item span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.benefist-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: #303030;
+}
+
+.benefist-subtitle {
+    color: var(--secondary-title-color);
+}
+
+.benefist-title {
+    color: var(--secondary-title-color);
+}
+
+.benefist-description {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+/* ____________________Team_________________ */
+
+.barbers {}
+
+.barbers-subtitle {
+    color: var(--secondary-title-color);
+
+}
+
+.barbers-title {
+    color: var(--secondary-title-color) .barbers-list
+}
+
+.barbers-item {}
+
+.barbers-item-title {
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-title-color);
+}
+
+.barbers-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+/* ____________________Gallery_________________ */
+.gallery {}
+
+.gallery-subtitle {
+    color: var(--secondary-title-color);
+}
+
+.gallery-list {}
+
+.gallery-item {}
+
+/* ____________________Contact_________________ */
+
+.contact {}
+
+.contsct-title {
+    color: var(--main-title-color)
+}
+
+.contact-address {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contact-list {}
+
+.contact-item {}
+
+.contact-link {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contact-subtitle {
+    color: var(--main-title-color);
+}
+
+.contact-hours {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
 }
